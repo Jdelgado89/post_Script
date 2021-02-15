@@ -17,10 +17,10 @@ cat wifi.json
 
 
 sleep 5
-curl -X POST -H "Cookie: jetpack=6af5e293139d989bdcfd66257b4f5327" -H "Content-Type: application/json" -d @sign_on.json http://192.168.>
+curl -X POST -H "Cookie: jetpack=6af5e293139d989bdcfd66257b4f5327" -H "Content-Type: application/json" -d @sign_on.json http://192.168.1.1/cgi-bin/sign_in.cgi
 sleep 5
-curl -X POST -H "Cookie: jetpack=6af5e293139d989bdcfd66257b4f5327" -H "Content-Type: application/json" -d @change_admin.json http://192>
+curl -X POST -H "Cookie: jetpack=6af5e293139d989bdcfd66257b4f5327" -H "Content-Type: application/json" -d @change_admin.json http://192.168.1.1/cgi-bin/settings_admin_password.cgi
 sleep 5
-curl -X POST -H "Cookie: jetpack=6af5e293139d989bdcfd66257b4f5327" -H "Content-Type: application/json" -d @wifi.json http://192.168.1.1>
+curl -X POST -H "Cookie: jetpack=6af5e293139d989bdcfd66257b4f5327" -H "Content-Type: application/json" -d @wifi.json http://192.168.1.1/cgi-bin/settings_admin_password.cgi
 
 
