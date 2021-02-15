@@ -1,0 +1,15 @@
+POST /cgi-bin/sign_in.cgi HTTP/1.1
+Host: 192.168.1.1
+User-Agent: Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:85.0) Gecko/20100101 Firefox/85.0
+Accept: application/json, text/javascript, */*; q=0.01
+Accept-Language: en-US,en;q=0.5
+Accept-Encoding: gzip, deflate
+Content-Type: application/x-www-form-urlencoded; charset=UTF-8
+X-Requested-With: XMLHttpRequest
+Content-Length: 42
+Origin: http://192.168.1.1
+Connection: close
+Referer: http://192.168.1.1/
+Cookie: jetpack=6af5e293139d989bdcfd66257b4f5327
+
+{"Command":"SignIn","Password":"93e82bcc"}
