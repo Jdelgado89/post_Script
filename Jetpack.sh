@@ -16,8 +16,11 @@ cat change_admin.json
 cat wifi.json
 
 
+sleep 5
+curl -X POST -H "Cookie: jetpack=6af5e293139d989bdcfd66257b4f5327" -H "Content-Type: application/json" -d @sign_on.json http://192.168.>
+sleep 5
+curl -X POST -H "Cookie: jetpack=6af5e293139d989bdcfd66257b4f5327" -H "Content-Type: application/json" -d @change_admin.json http://192>
+sleep 5
+curl -X POST -H "Cookie: jetpack=6af5e293139d989bdcfd66257b4f5327" -H "Content-Type: application/json" -d @wifi.json http://192.168.1.1>
 
-curl -X POST -H "Content-Type: application/json" -d @sign_on.json http://192.168.1.1
-curl -X POST -H "Content-Type: application/json" -d @change_admin.json http://192.168.1.1
-curl -X POST -H "Content-Type: application/json" -d @wifi.json http://192.168.1.1
 
