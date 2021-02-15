@@ -6,9 +6,9 @@ read key
 
 echo "{"Command":"SignIn","Password":"$key"}" > sign_on.json
 
-echo "{"CurrentPassword":"$key","NewPassword":"G1l4River4dm1n","SecurityQuestion":"NameOfStreet","SecurityAnswer":"Allison"}" > change_>
+echo "{"CurrentPassword":"$key","NewPassword":"G1l4River4dm1n","SecurityQuestion":"NameOfStreet","SecurityAnswer":"Allison"}" > change_admin.json
 
-echo "{"SSID":"GRTI Jetpack","WiFiPassword":"G1l4River3r","WiFiMode":0,"WiFiAuthentication":6,"WiFiEncription":4,"WiFiChannel":0,"MaxCo>
+echo "{"SSID":"GRTI Jetpack","WiFiPassword":"G1l4River3r","WiFiMode":0,"WiFiAuthentication":6,"WiFiEncription":4,"WiFiChannel":0,"MaxConnectedDevice":8,"PrivacySeparator":false,"WMM":true,"Command":"SetWifiSetting"}" > wifi.json
 
 
 cat sign_on.json
