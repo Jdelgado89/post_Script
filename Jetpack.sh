@@ -1,8 +1,22 @@
 #!/bin/bash
 
+nmcli device wifi rescan
+
+nmcli device wifi list
+
+
+echo "What's they last four?"
+
+read last4
+
 echo "What's the Key?"
 
 read key
+
+
+
+nmcli device wifi connect Ellipsis\ \Jetpack\ \$last4 password $key
+
 
 echo "{"Command":"SignIn","Password":"$key"}" > sign_on.json
 
